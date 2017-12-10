@@ -1,0 +1,145 @@
+nav{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #5b7989;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+li{
+  list-style: none;
+  float: left;
+  padding-right: 10px;
+  color: #FFFFFF;
+  text-align: right;
+  margin-top: -10px;
+}
+
+
+body{
+background: #02010a;
+font-style: Dancing Script;
+}
+h1{
+  color: #FFFFFF;
+  text-shadow: 2px 2px 2px #02010a;
+}
+.SeccionPrincipal{
+  background: #82c3a6;
+  width: 100%;
+}
+.SeccionSecundario{
+  border: 1px;
+  background: #d5c75f;
+  width: 100%;
+}
+img{
+  width: 700px;
+  height: 500px;
+  display: block;
+  text-shadow: 2px 2px 2px #02010a;
+  margin-left: auto;
+  margin-right: auto;
+}
+img .principal{
+  text-align: center;
+}
+.ImagencontenedorSecundario {
+	margin: 0;
+  padding: 0;
+  width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+.ImagencontenedorSecundario div {
+  box-sizing: border-box;
+  min-height: 100px;
+  min-width: 100px;
+}
+img .Secundario{
+  min-height: 100%;
+  min-width: 100%;
+  width: 50%;
+}
+footer{
+  position: absolute;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #C6d5c5;
+}
+.contenedor {
+	margin: 0;
+  padding: 0;
+  width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+.contenedor div {
+  box-sizing: border-box;
+  min-height: 100px;
+  min-width: 100px;
+}
+.c1 p {
+	font-family: helvetica;
+	font-size: 1.4em;
+}
+.c2 p {
+	font-family: helvetica;
+	font-size: 2em;
+}
+.c3 p {
+	font-family: helvetica;
+	font-size: 1em;
+}
+.c4 p {
+	font-family: helvetica;
+	font-size: 1em;
+}
+.c1 {
+	width: 25%;
+}
+.c2 {
+	width: 25%;
+}
+.c3 {
+	width: 25%;
+}
+.c4 {
+	width: 25%;
+}
+@media all and (max-width: 500px) {
+	.c1 {
+		width: 100%;
+		order: 1;
+	}
+
+	.c2 {
+		width: 100%;
+		order: 2;
+	}
+	.c3 {
+		width: 100%;
+		order: 3;
+	}
+  .c4 {
+		width: 100%;
+		order: 4;
+	}
+}
+
+@media all and (max-width: 800px) and (min-width: 500px) {
+	.c1 {
+		width: 25%;
+	}
+	.c2 {
+		width: 25%;
+	}
+	.c3 {
+		width: 25%;
+	}
+  .c4 {
+		width: 25%;
+	}
+}
