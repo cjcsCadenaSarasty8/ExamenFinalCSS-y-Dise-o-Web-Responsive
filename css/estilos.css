@@ -3,7 +3,7 @@ header section{
 }
 nav{
   position: absolute;
-  width: 97%;
+  width: 98%;
   background: #5b7989;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -28,7 +28,7 @@ nav li a{
 body{
 background: #02010a;
 font-family: 'Dancing Script', cursive;
-width:97%;
+width:98%;
 height:90%;
 margin: auto;
 
@@ -41,7 +41,14 @@ h1{
   background: #82c3a6;
   width:100%;
   height: 500px;
+  display: table;
 }
+.ContenedorPrincipal div{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
 .principal{
   height: 300px;
   width: auto;
@@ -51,18 +58,15 @@ h1{
   width: 100%;
   height: 500px;
   display: flex;
-  flex-flow: row wrap;
+	flex-flow: row wrap;
 }
 .Secundario{
-  text-align: center;
-  padding: 20px;
-  box-sizing: border-box;
-  min-width: 100px;
+
 }
 .izquierda{
   float: left;
   height: 200px;
-  width: auto;
+  width: 300px;
   transition: 2s;
 }
 .izquierda:hover {
@@ -71,7 +75,7 @@ h1{
 .derecha{
   float: right;
   height: 200px;
-  width: auto;
+  width: 300px;
   transition: 2s;
 }
 .derecha:hover {
@@ -110,6 +114,11 @@ footer img{
 }
 footer a{
   color: #000000;
+}
+
+div .c3 .img{
+  width: 3px;
+  height: 3px;
 }
 
 .contenedor {
@@ -154,8 +163,19 @@ footer.c4 {
     height: 58px;
   }
 
+.ContenedorPrincipal{
+  height: 300px;
+  width: 100%;
+}
+
   .principal{
+    align-items: center;
     height: 200px;
+  }
+
+  .Secundario{
+    width: 100%;
+    height: auto;
   }
 
   .contenedor .c1{
