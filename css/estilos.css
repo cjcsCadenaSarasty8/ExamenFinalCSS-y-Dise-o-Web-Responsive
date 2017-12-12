@@ -37,53 +37,63 @@ h1{
   color: #FFFFFF;
   text-shadow: 2px 2px 2px #02010a;
 }
-.SeccionPrincipal{
+.ContenedorPrincipal{
   background: #82c3a6;
-  height: 300px;
-}
-.SeccionPrincipal div{
-  text-align: center;
-  width: 100%;
-  height: 70%;
+  width:100%;
+  height: 500px;
 }
 .principal{
+  height: 300px;
   width: auto;
-  height: 70px;
 }
-
 .contenedorSecundario{
-    height: 500px;
-    background: 2px,2px,2px #d5c75f;
-    border: 1px;
+  background: #d5c75f ;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-flow: row wrap;
 }
 .Secundario{
-  width: 50%;
-  height: 300px;
-}
-.Secundario img{
-  margin-top: 70px;
   text-align: center;
-  width: 50%;
-  height: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  min-width: 100px;
 }
 .izquierda{
-  border: 2px;
-  text-shadow:2px 2px 2px #82c3a6;
+  float: left;
+  height: 200px;
+  width: auto;
   transition: 2s;
 }
 .izquierda:hover {
   transform: rotate(10deg);
 }
 .derecha{
-  border: 2px;
-  text-shadow:2px 2px 2px #82c3a6;
+  float: right;
+  height: 200px;
+  width: auto;
   transition: 2s;
 }
-
 .derecha:hover {
-  transform: translate(-5px,10px);
+  transform: translate(5px,-10px);
 }
-
+.album{
+  width: 100%;
+  height: 800px;
+  background: #d5c75f;
+}
+.album .contenedor .c1{
+  filter: blur(10px);
+}
+.PrimeraFila .c2{
+  filter: grayscale(100%);
+}
+.SegundaFila .c1 .c3{
+  filter: grayscale(100%);
+}
+.album .contenedor .c3{
+  filter: sepia(90%);
+}
 footer{
 
   width: 100%;
@@ -113,19 +123,29 @@ footer a{
   box-sizing: border-box;
   min-width: 100px;
 }
-.c1 p {
+.contenedor img{
+  height: 100px;
+  width: auto;
+};
+.contenedor .c1{
+  width: 33%;
 }
-.c2 p {
+.contenedor .c2{
+  width: 33%;
 }
-.c3 p {
+.contenedor .c3{
+  width: 33%;
 }
-.c1 {
+footer.c1 {
 	width: 25%;
 }
-.c2 {
+footer.c2 {
   	width: 25%;
 }
-.c3 {
+footer.c3 {
+  	width: 25%;
+}
+footer.c4 {
   	width: 25%;
 }
 
@@ -133,14 +153,21 @@ footer a{
   header section{
     height: 58px;
   }
-  SeccionPrincipal{
-    padding-top: 5%;
+
+  .principal{
+    height: 200px;
   }
-  .
-  img{
+
+  .contenedor .c1{
     width: 100%;
-    height: 300px;
   }
+  .contenedor .c2{
+    width: 100%;
+  }
+  .contenedor .c3{
+    width: 100%;
+  }
+
   nav h1{
   float: inherit;
   }
@@ -149,16 +176,16 @@ footer a{
     margin-top: auto;
     text-align: center;
   }
-	.c1 {
+	footer.c1 {
 		width: 100%;
 	}
-	.c2 {
+	footer.c2 {
 		width: 100%;
 	}
-	.c3 {
+	footer.c3 {
 		width: 100%;
 	}
-  .c4 {
+  footer.c4 {
 		width: 100%;
 	}
 }
